@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "icpc-trainer"
+version = "0.1.0"
+description = "ICPC Trainer TUI built with Textual"
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{ include = "icpc_trainer", from = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+textual = "^0.86.0"
+playwright = "^1.52.0"
+sqlalchemy = "^2.0.41"
+aiosqlite = "^0.20.0"
+
+[tool.poetry.scripts]
+icpc-trainer = "icpc_trainer.tui:main"
+
+[build-system]
+requires = ["poetry-core>=1.8.0"]
+build-backend = "poetry.core.masonry.api"
