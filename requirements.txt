@@ -1,0 +1,4 @@
+# Requirements for ICPC Trainer
+# Add your dependencies below
+requests
+rich
